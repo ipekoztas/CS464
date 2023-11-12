@@ -1,7 +1,7 @@
 # CS464 Introduction to Machine Learning
 # BBC News Classification Project
 - Implemented in Python (Jupyter Notebook)
-You can install ipynb with:
+You can install requirements with:
 
 ```bash
 pip install -r requirements.txt
