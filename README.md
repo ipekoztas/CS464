@@ -1,72 +1,34 @@
-# CS464
-Bilkent CS464 Introduction to Machine Learning
-Certainly! Here's a basic template for your README file:
-
-```markdown
-# Your Project Name
-
+# CS464 Introduction to Machine Learning
+# BBC News Classification Project
+- Implemented in Python (Jupyter Notebook)
 ## Overview
 
-Briefly describe your machine learning project, its purpose, and key features.
+This project aims to develop a model for classifying news into five topics: Business, Entertainment, Politics, Sport, and Tech.
 
-## Installation
+## Dataset
 
-### Requirements
+The dataset consists of 2225 real news articles, preprocessed to represent word occurrences. It is split into 1668 news for training and 557 news for testing (validation). 
+## Bag-of-Words Representation and Multinomial Naive Bayes Model
 
-- Python 3.x
-- Jupyter Notebook
-- (Add any other specific requirements)
+The project utilizes the bag-of-words representation and the Multinomial Naive Bayes model for classification.
 
-### Installation Steps
+### 3.1 - Class Distribution Analysis
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-project.git
-   ```
+1. Find the percentages of each category in `y_train.csv` and `y_test.csv` and visualize them with a pie chart.
+2. Calculate the prior probability of each class.
+3. Analyze the balance of the training set and discuss the potential impact of class imbalance on the model.
+4. Determine the occurrences and log ratios of the words "alien" and "thunder" in the training documents labeled as "Tech."
 
-2. Navigate to the project directory:
-   ```bash
-   cd your-project
-   ```
+## 3.2 - Multinomial Naive Bayes Model Evaluation
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Train a Multinomial Naive Bayes model on the training set and evaluate on the test set. Report accuracy in three decimal points and provide the confusion matrix.
 
-## Usage
+## 3.3 - Multinomial Naive Bayes Model with Dirichlet Prior
 
-1. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
+Extend the classifier to use a fair Dirichlet prior (additive smoothing) with α = 1. Train and evaluate on the test set, reporting accuracy and confusion matrix.
 
-2. Navigate to the notebook file (`your_project.ipynb`) and open it.
 
-3. Run the cells in the notebook sequentially.
+## 3.4 - Bernoulli Naive Bayes Model
 
-4. (Add any additional usage instructions or details)
+Train a Bernoulli Naive Bayes classifier on the training set and evaluate on the test set. Report accuracy and confusion matrix.
 
-## Project Structure
-
-Describe the structure of your project, key files, and directories.
-
-## License
-
-Specify the license under which your project is distributed. For example, you can use the [MIT License](https://opensource.org/licenses/MIT).
-
-## Acknowledgments
-
-Give credit to any resources, libraries, or individuals that you used or were inspired by in your project.
-
-## Contributing
-
-If you want others to contribute to your project, provide guidelines for how they can do so.
-
-## Contact
-
-Provide your contact information or a way for users to reach out if they have questions or issues.
-
----
-Feel free to customize the sections based on your project's specific details. Good luck with your machine learning project!
-```
