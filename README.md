@@ -1,6 +1,13 @@
 # CS464 Introduction to Machine Learning
 # BBC News Classification Project
 - Implemented in Python (Jupyter Notebook)
+You can install ipynb with:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ## Overview
 
 This project aims to develop a model for classifying news into five topics: Business, Entertainment, Politics, Sport, and Tech.
